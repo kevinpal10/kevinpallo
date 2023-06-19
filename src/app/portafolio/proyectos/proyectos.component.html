@@ -1,0 +1,53 @@
+<Section id="hobbies-field">
+    <div id="titulo-skill" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h1>Proyectos estudiantiles</h1>
+    </div>
+    <div class="row" id="contenedor">
+
+        <!-- Inicio Proyectos estudiantes -->
+        <div id="interno-hobbies" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div  id="galeria-port" class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" id="hobbies-img" *ngFor="let proyecto of proyectosEs">
+                    <img src="{{proyecto.imagen}}" alt="">
+                    <div class="hover-hobbies">
+                        <a routerLink="listado/{{proyecto.enlace}}">{{proyecto.name}}</a>
+                    </div>
+                </div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" id="hobbies-img">
+                    <img src="./assets/img/Proyectos/dibujos.jpg" alt="">
+                    <div class="hover-hobbies">
+                        <a routerLink="/dibujos">Dibujos</a>
+                    </div>
+                </div>
+            </div>
+        </div>	
+        <!-- Fin Proyectos estudiantes -->
+
+
+    </div>
+</Section>
+
+<router-outlet></router-outlet>
+
+<Section id="proyLab-field">
+	<div class="row" id="contenedor">
+		<div id="titulo-skill-proyLab" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<h1>Proyectos profesionales</h1>
+		</div>
+
+		<div id="interno-proyLab" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div  id="galeria-port" class="row">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" id="hobbies-img">
+					<img src="./assets/img/Proyectos/facturacion.jpg"  alt="">
+					<div class="hover-hobbies">
+						<a href="https://safa.com.ec/" target="_blank">Sistema de facturacion electrónica SAFA</a>
+					</div>
+					<div  id="proyLab-caja-info">
+						<span>Pasante front-end y back-end con Angular y Spring, base de datos SQL con PostgreSQL por 6 meses.</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</Section>

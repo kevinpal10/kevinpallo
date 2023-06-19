@@ -1,0 +1,9 @@
+<section class="cuerpo">
+    <div class="list-group">
+        <table>
+            <tr *ngFor = "let proyecto of arrayListado">
+                <td><a href="{{proyecto.path}}" > {{proyecto.name}}</a></td>
+            </tr>
+        </table>
+    </div>
+</section>

@@ -1,0 +1,59 @@
+ 
+#encabezado{
+	padding: 20px;
+	background-image: url("./../../../assets/img/Extras/fondo.avif");
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+}
+
+#encabezado #texto{
+	margin-top: 15% !important;
+	font-family: 'Orbitron', sans-serif;
+}
+
+#encabezado #texto h1{
+	text-align: center;
+	font-size: 100px;
+	color: rgb(73, 140, 241);
+}
+
+#encabezado #texto h3{
+	text-align: center;
+	font-size: 40px;
+	color: rgb(162, 195, 244);
+}
+
+@media (max-width: 780px) {
+
+	#encabezado{
+		background-image: url("./../../../assets/img/Extras/fondo1.avif");
+		height: 100vh !important;
+		background-position: center;
+		padding: 0px 20px 20px 20px;
+	}
+
+	#encabezado p{
+		font-size: x-small;
+	}
+
+
+	#encabezado #texto h1{
+		font-size: 35px;
+		line-height: 50vh;
+		/*color: rgb(114, 163, 237);*/
+		font-weight: 700;
+		color: rgba(146, 89, 58, 0.918);
+	}	
+
+	#encabezado #texto h3{
+		font-size: 15px;
+		margin-top: -23vh;
+		/*color: #4364b7;*/
+		font-weight: 800;
+		color: rgba(114, 63, 31, 0.918);
+
+	}	
+
+}

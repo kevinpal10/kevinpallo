@@ -1,0 +1,32 @@
+<section class="fondo">
+    <div class="encabezado">
+        <app-nav-bar></app-nav-bar>
+    </div>
+    <div class="row" id="fila">    
+        <p></p>
+        <h2>Dibujos</h2>
+        <p></p>
+        
+        <!-- Portada -->
+        <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0"></div>
+        <div class="caja-principal col-lg-8 col-md-8 col-sm-10 col-xs-12">
+            <div class="caja-dibujo">
+                <img src="{{principal_address}}" height="500px" alt="Dibujo rey leon">
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0"></div>
+        <!-- Portada -->
+    
+        <p></p>
+        <!-- Dibujos -->
+        <div class="caja col-lg-3 col-md-3 col-sm-3 col-xs-3" *ngFor="let dibujo of imagenes">
+            <div class="caja-dibujo">
+                <img src="{{dibujo.path}}" alt="dibujo de un perrito">
+                <h6>{{dibujo.name}}</h6>
+            </div>
+        </div>
+        <!-- Dibujos -->
+    </div>
+<app-redes-sociales></app-redes-sociales>
+
+</section>

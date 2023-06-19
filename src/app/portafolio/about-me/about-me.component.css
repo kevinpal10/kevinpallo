@@ -1,0 +1,51 @@
+.about-me{
+	padding: 40px 20px;
+	background: url(https://img.freepik.com/premium-vector/abstract-minimal-white-background_105940-668.jpg?w=2000);
+	background-size: cover;
+}
+
+#titulo-skill h1{
+	text-align: center;
+}
+
+.fila .imagen img{
+	padding: 10px;
+	width: 90%;
+	border-radius: 30px;
+}
+
+.fila .imagen {
+    text-align: center;
+}
+
+.fila .parrafo{
+	align-items: center;
+	display: inline-flex;
+}
+
+.fila p{
+	align-items: center;
+	text-align: justify;
+	font-size: 16px;
+}
+
+@media (max-width: 780px) {
+	#About-me-img img{
+		width: 100%;
+		padding: 20px 40px;
+	}
+	
+	
+	#About-me-texto{
+		text-align: justify;
+	   font-size: medium;
+	   padding: 10% 3%;
+	}
+	
+	.about-me{
+		padding: 40px 20px;
+		background: url(https://img.freepik.com/free-vector/white-abstract-wallpaper_23-2148830026.jpg?w=2000);
+		background-size: cover;
+	}
+
+}

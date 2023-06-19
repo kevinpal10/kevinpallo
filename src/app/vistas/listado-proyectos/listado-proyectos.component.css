@@ -1,0 +1,8 @@
+#fondo{
+    /**background-image: url("https://plustatic.com/3400/conversions/ramas-matematicas-social.jpg");**/
+    /** background-image: url("https://images3.alphacoders.com/270/270595.jpg"); **/
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+    padding: 15px;    
+}

@@ -1,0 +1,86 @@
+
+.fondo{
+   /* background-color: rgb(41, 38, 38);*/
+   background: url(../../../assets/img/FondoDibujos.jpg);
+   background-size: cover;
+}  
+
+.fondo .encabezado{
+    padding: 20px;
+}
+
+#fila{
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+}
+
+#fila h2{
+    text-align: center;
+    color: white;
+}
+
+.caja{
+	padding: 5px;
+}
+
+.caja-dibujo{
+    border: 1px rgb(26, 134, 26) groove;
+    padding: 20px;
+    background-color: rgba(118, 163, 202, 0.247);
+    border-radius: 20px;
+}
+
+.caja-principal img{
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.cajaImagen{
+    margin: 5px;
+}
+
+.caja img{
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.caja h6{
+    margin-top: 30px;
+    text-align: center;
+    color: wheat;
+}
+
+.caja-dibujo:hover{
+    background-color: rgba(69, 147, 214, 0.247);
+    border: 2px rgb(121, 155, 29) groove;
+}
+
+.caja-dibujo:hover img{
+    opacity: 1;
+}
+
+.caja-dibujo:hover h6{
+    color: rgb(244, 204, 130);
+}
+
+
+@media (max-width: 780px) {
+    .caja-dibujo h6{
+        font-size: 12px;
+    }
+    .caja{
+		align-items: center;
+		width: 33.3%;
+	}
+}
+
+
+@media (max-width: 480px) {
+    .caja{
+		width: 50%;
+	}
+
+}
