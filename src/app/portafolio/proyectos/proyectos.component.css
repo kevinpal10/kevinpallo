@@ -86,11 +86,15 @@
 	position: relative;
 	cursor: pointer;
 	box-shadow: 0 0 3px 0 rgba(0,0,0, .5);
-	padding: 3px 3px 60px 3px;
+	padding: 3px 3px 3px 3px;
 	font-weight: 500;
 	font-size: 13px !important;
 	text-align: justify;
 	color: rgb(255, 255, 255);
+}
+
+#hobbies-img #hover-hobbies{
+	padding: 10px !important; 
 }
 
 @media (max-width: 570px) {
@@ -113,7 +117,4 @@
     	padding: 30px 20px 10px 20px;
 	}
 	
-	#proyLab-caja-info{
-		font-size: xx-small;
-	}
 }

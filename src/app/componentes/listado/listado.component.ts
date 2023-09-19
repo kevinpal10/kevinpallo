@@ -15,9 +15,9 @@ export class ListadoComponent implements OnInit{
 
   arrayDevWeb = [
     {path: 'https://kevinpal10.github.io/preuniversitario/', name: 'Preuniversitario CENCAP'},
-    {path: '', name: 'Centro médico'},
-    {path: '', name: 'Antisana volcan'},
-    {path: '', name: 'Blog dinámico'},
+    {path: 'https://kevinpal10.github.io/consultorio-medico/', name: 'Centro médico'},
+    {path: 'https://kevinpal10.github.io/sitio-turistico/', name: 'Antisana volcan'},
+    {path: 'https://kevinpal10.github.io/SitioDinamico', name: 'Blog dinámico'},
     {path: '', name: 'SPA'},
 
   ] 
