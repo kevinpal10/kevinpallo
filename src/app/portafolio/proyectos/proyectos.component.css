@@ -1,19 +1,33 @@
 /* HOBBIES FIELD */
  
+#titulo-skill h1{
+	color: rgb(15, 109, 251);
+	font-family: 'Balsamiq Sans', cursive;
+	padding: 30px;
+	text-align: center;
+}
+
+
 #hobbies-field{
 	padding: 30px 50px 10px 50px;
 	width: 100%;
 	text-align: center;
-	background-color: rgba(231, 231, 229, 0.658);
+	background-color: rgb(0, 0, 0);
 }
-
 
 #interno-hobbies{
 	padding: 0px 40px 0px 40px;
 }
 
-#hobbies-field h1{
-	color: #000;
+
+#proy{
+	color: rgb(195, 195, 195);
+	background-color: rgba(30, 30, 30, 0.116);
+	padding: 20px;
+}
+
+#proy ul li{
+	text-align: left;
 }
 
 #hobbies-img{
@@ -52,7 +66,7 @@
 }
 
 .hover-hobbies a:hover{
-	color: rgb(199, 209, 54);
+	color: rgb(212, 215, 211);
 }
 
 #hobbies-img:hover .hover-hobbies{
@@ -64,8 +78,38 @@
 	padding: 0px 50px 0px 50px;
 	width: 100%;
 	text-align: center;
-	background-color: rgba(127, 179, 214, 0.11);
+	background-color: rgb(0, 0, 0);
 }
+
+#proyLab-field #proy{
+	margin-bottom: 20px;
+}
+
+#proyLab-field #proy #proy-row{
+	display: inline-flex;
+}
+
+#proyLab-field #proy #proy-text{
+	align-items: center;
+	align-content: center;
+	padding: 10px;
+}
+
+#proyLab-field #proy #proy-text ul li{
+	text-align: justify;
+}
+
+#proyLab-field #proy #img2{
+	padding: 20px;
+}
+
+#proyLab-field #proy #img2 img{
+	width: 50%;
+}
+
+
+
+/*****************************************************************/
 
 #interno-proyLab{
 	padding: 0px 40px 20px 40px;
@@ -80,7 +124,7 @@
 
 
 #proyLab-field #hobbies-img{
-	background-color: rgba(34, 99, 134, 0.452);
+	background-color: rgba(34, 99, 134, 0.452); 
 	height: 200px;
 	overflow: hidden;
 	position: relative;
@@ -93,8 +137,9 @@
 	color: rgb(255, 255, 255);
 }
 
-#hobbies-img #hover-hobbies{
-	padding: 10px !important; 
+#hobbies-img .hover-hobbies{
+	padding: 20px !important; 
+	font-size: 11px;
 }
 
 @media (max-width: 570px) {
@@ -103,6 +148,14 @@
 		padding: 5px;
 		border-radius: 10px;
 		max-height: 180px;
+	}
+
+	#proyLab-field #proy #proy-text h5{
+		font-size: 12px !important;
+	}
+
+	#proyLab-field #proy #proy-text ul li{
+		font-size: 10px !important;
 	}
 
 	#hobbies-img img{

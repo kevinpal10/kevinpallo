@@ -14,11 +14,12 @@ export class ListadoComponent implements OnInit{
   background = ''
 
   arrayDevWeb = [
+    {path: 'https://kevinpal10.github.io/ropa-deportiva/', name: 'Tienda de ropa'},
     {path: 'https://kevinpal10.github.io/preuniversitario/', name: 'Preuniversitario CENCAP'},
     {path: 'https://kevinpal10.github.io/consultorio-medico/', name: 'Centro médico'},
     {path: 'https://kevinpal10.github.io/sitio-turistico/', name: 'Antisana volcan'},
     {path: 'https://kevinpal10.github.io/SitioDinamico', name: 'Blog dinámico'},
-    {path: '', name: 'SPA'},
+    {path: '', name: 'SPA'}, 
 
   ] 
   

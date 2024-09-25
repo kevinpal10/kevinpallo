@@ -1,7 +1,7 @@
  
 #encabezado{
 	padding: 20px;
-	background-image: url("./../../../assets/img/Extras/fondo.avif");
+	background-color: rgba(0, 0, 0, 1);
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
@@ -15,45 +15,39 @@
 
 #encabezado #texto h1{
 	text-align: center;
-	font-size: 100px;
-	color: rgb(73, 140, 241);
+	font-size: 90px;
+	color: rgb(15, 109, 251);
 }
 
 #encabezado #texto h3{
 	text-align: center;
-	font-size: 40px;
-	color: rgb(162, 195, 244);
+	font-size: 30px;
+	color: rgb(255, 255, 255);
 }
 
 @media (max-width: 780px) {
 
 	#encabezado{
-		background-image: url("./../../../assets/img/Extras/fondo1.avif");
+		background-color: rgba(0, 0, 0, 1);
 		height: 100vh !important;
-		background-position: center;
+		background-position: center;  
 		padding: 0px 20px 20px 20px;
 	}
 
 	#encabezado p{
 		font-size: x-small;
-	}
-
+	} 
 
 	#encabezado #texto h1{
 		font-size: 35px;
 		line-height: 50vh;
-		/*color: rgb(114, 163, 237);*/
 		font-weight: 700;
-		color: rgba(146, 89, 58, 0.918);
 	}	
 
 	#encabezado #texto h3{
 		font-size: 15px;
 		margin-top: -23vh;
-		/*color: #4364b7;*/
 		font-weight: 800;
-		color: rgba(114, 63, 31, 0.918);
-
 	}	
 
 }

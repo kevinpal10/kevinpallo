@@ -1,29 +1,28 @@
-
 .skills-field{
 	padding: 30px 50px;
 	width: 100%;
 	text-align: center;
-	background-image: url(https://fondosmil.com/fondo/52902.jpg);
+	background-color: black;
 	background-attachment: fixed;
 	background-size: cover;
 }
 
 
 #titulo-skill{
-	color: #fff;
+	color: rgb(15, 109, 251);
 	font-family: 'Balsamiq Sans', cursive;
 	padding: 30px;
 	text-align: center;
 }
 
 .titulo-skills{
-	color: rgb(61, 61, 61);
+	color: rgb(145, 143, 143);
 	padding: 10px;
 }
 
 
-#contenedor-skill{
-	background-color: rgba(247, 242, 242, 0.733);
+#contenedor-skill{   
+	background-color: rgba(30, 30, 30, 0.122);
 	color: rgba(0, 0, 0, 0.582);
 	justify-content: center;
 	border-radius: 10px; 
@@ -31,11 +30,14 @@
 	margin-bottom: 20px;
 }
 
+#contenedor-skill #caja-skill #caja-content p{
+	margin: 0;
+}
+
 #contenedor-skill #caja-skill #caja-content{
 	min-height: 79% !important;
 	max-height: 80% !important;	
-	color: #313131;
-	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
 }
 
 #contenedor-skill #caja-skill #caja-content h6{
@@ -43,7 +45,7 @@
 }
 
 #contenedor-skill #caja-skill #caja-content img{
-	max-height: 100px !important;
+	max-height: 110px !important;
 	width: 100%;
 	border-radius: 10px;
 	margin-top: 10px;
@@ -52,8 +54,6 @@
 
 
 @media (max-width: 780px) {
-
-
 	.skills-field{
 		padding: 15px;
 	}
@@ -70,7 +70,7 @@
 		align-items: center;
 		text-align: justify;
 		font-size: 13px;
-	}
+	} 
 
 
 
