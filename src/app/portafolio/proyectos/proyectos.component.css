@@ -20,15 +20,7 @@
 }
 
 
-#proy{
-	color: rgb(195, 195, 195);
-	background-color: rgba(30, 30, 30, 0.116);
-	padding: 20px;
-}
 
-#proy ul li{
-	text-align: left;
-}
 
 #hobbies-img{
 	height: 200px;
@@ -73,7 +65,8 @@
 	transform: scale(1);
 }
 
-/* PROYECTOS PROFESIONALES */
+/* NUEVO PROYECTOS PROFESIONALES */
+
 #proyLab-field{	
 	padding: 0px 50px 0px 50px;
 	width: 100%;
@@ -83,6 +76,13 @@
 
 #proyLab-field #proy{
 	margin-bottom: 20px;
+	color: rgb(195, 195, 195);
+	background-color: rgba(30, 30, 30, 0.116);
+	padding: 20px;
+}
+
+#proy ul li{
+	text-align: left;
 }
 
 #proyLab-field #proy #proy-row{
@@ -117,7 +117,6 @@
 
 #titulo-skill-proyLab{
 	color: rgb(0, 0, 0);
-	font-family: 'Balsamiq Sans', cursive;
 	padding: 10px;
 	text-align: center;
 }
@@ -148,6 +147,10 @@
 		padding: 5px;
 		border-radius: 10px;
 		max-height: 180px;
+	}
+
+	#proyLab-field #proy{
+		background-color: rgba(44, 44, 44, 0.116);
 	}
 
 	#proyLab-field #proy #proy-text h5{
