@@ -79,6 +79,8 @@
 	color: rgb(195, 195, 195);
 	background-color: rgba(30, 30, 30, 0.116);
 	padding: 20px;
+	border: #7d7c7c06 1px groove;
+	border-radius: 10px;
 }
 
 #proy ul li{
