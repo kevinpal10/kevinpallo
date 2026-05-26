@@ -1,178 +1,185 @@
-/* HOBBIES FIELD */
- 
-#titulo-skill h1{
-	color: rgb(15, 109, 251);
-	font-family: 'Balsamiq Sans';
-	padding: 30px;
-	text-align: center;
+/* COMPARTIDO */
+.section-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
 }
 
-
-#hobbies-field{
-	padding: 30px 50px 10px 50px;
-	width: 100%;
-	text-align: center;
-	background-color: rgb(0, 0, 0);
+.section-label {
+  font-size: 23px;
+  font-weight: 500;
+  color: #534AB7;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 
-#interno-hobbies{
-	padding: 0px 40px 0px 40px;
+/* EXPERIENCIA */
+.exp-section {
+  background: #ffffff;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
 }
 
-
-
-
-#hobbies-img{
-	height: 200px;
-	overflow: hidden;
-	position: relative;
-	cursor: pointer;
-	box-shadow: 0 0 3px 0 rgba(0,0,0, .5);
-	padding: 3px 3px;
+.exp-card {
+  background: #ffffff;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-#hobbies-img > img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	display: block;
+.exp-card:last-child {
+  margin-bottom: 0;
 }
 
-.hover-hobbies{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	transform: scale(0);
-	background: hsla(273, 91%, 27%,0.7);
-	transition: transform .5s;
-	display:flex;
-	justify-content: center;
-	align-items: 	center;
-	flex-direction: column;
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
 }
 
-.hover-hobbies a{
-	color: #fff;
-	text-decoration: none;
+.exp-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 4px;
 }
 
-.hover-hobbies a:hover{
-	color: rgb(212, 215, 211);
+.exp-company a {
+  font-size: 13px;
+  color: #534AB7;
+  text-decoration: none;
 }
 
-#hobbies-img:hover .hover-hobbies{
-	transform: scale(1);
+.exp-company a:hover {
+  text-decoration: underline;
 }
 
-/* NUEVO PROYECTOS PROFESIONALES */
-
-#proyLab-field{	
-	padding: 0px 50px 0px 50px;
-	width: 100%;
-	text-align: center;
-	background-color: rgb(0, 0, 0);
+.exp-logo {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.85;
 }
 
-#proyLab-field #proy{
-	margin-bottom: 20px;
-	color: rgb(195, 195, 195);
-	background-color: rgba(30, 30, 30, 0.116);
-	padding: 20px;
-	border: #7d7c7c06 1px groove;
-	border-radius: 10px;
+.exp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 1rem;
 }
 
-#proy ul li{
-	text-align: left;
+.tag {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #f5f5f3;
+  color: #666;
+  border: 0.5px solid rgba(0, 0, 0, 0.08);
 }
 
-#proyLab-field #proy #proy-row{
-	display: inline-flex;
+.exp-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-#proyLab-field #proy #proy-text{
-	align-items: center;
-	align-content: center;
-	padding: 10px;
+.exp-list li {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+  padding-left: 14px;
+  position: relative;
+  margin-bottom: 6px;
 }
 
-#proyLab-field #proy #proy-text ul li{
-	text-align: justify;
+.exp-list li::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  color: #534AB7;
+  font-weight: 700;
 }
 
-#proyLab-field #proy #img2{
-	padding: 20px;
+/* PROYECTOS PERSONALES */
+.projects-section {
+  background: #f5f5f3;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
 }
 
-#proyLab-field #proy #img2 img{
-	width: 50%;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
 }
 
-
-
-/*****************************************************************/
-
-#interno-proyLab{
-	padding: 0px 40px 20px 40px;
+.project-card {
+  background: #ffffff;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s;
 }
 
-#titulo-skill-proyLab{
-	color: rgb(0, 0, 0);
-	padding: 10px;
-	text-align: center;
+.project-card:hover {
+  border-color: rgba(83, 74, 183, 0.4);
 }
 
-
-#proyLab-field #hobbies-img{
-	background-color: rgba(34, 99, 134, 0.452); 
-	height: 200px;
-	overflow: hidden;
-	position: relative;
-	cursor: pointer;
-	box-shadow: 0 0 3px 0 rgba(0,0,0, .5);
-	padding: 3px 3px 3px 3px;
-	font-weight: 500;
-	font-size: 13px !important;
-	text-align: justify;
-	color: rgb(255, 255, 255);
+.project-img {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
 }
 
-#hobbies-img .hover-hobbies{
-	padding: 20px !important; 
-	font-size: 11px;
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
 }
 
-@media (max-width: 570px) {
-	#hobbies-img{
-		width: 33.3%;
-		padding: 5px;
-		border-radius: 10px;
-		max-height: 180px;
-	}
+.project-card:hover .project-img img {
+  transform: scale(1.04);
+}
 
-	#proyLab-field #proy{
-		background-color: rgba(55, 55, 55, 0.218);
-	}
+.project-info {
+  padding: 0.9rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-	#proyLab-field #proy #proy-text h5{
-		font-size: 12px !important;
-	}
+.project-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
 
-	#proyLab-field #proy #proy-text ul li{
-		font-size: 10px !important;
-	}
+.project-link {
+  font-size: 12px;
+  color: #534AB7;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 
-	#hobbies-img img{
-		border-radius: 10px;
-	}
+.project-link:hover {
+  text-decoration: underline;
+}
 
-	#hobbies-field {
-    	padding: 30px 20px 10px 20px;
-	}
+@media (max-width: 768px) {
+  .section-inner {
+    padding: 2rem 1.5rem;
+  }
 
-	#proyLab-field {
-    	padding: 30px 20px 10px 20px;
-	}
-	
+  .exp-logo {
+    height: 28px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

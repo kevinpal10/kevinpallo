@@ -8,34 +8,46 @@ import { Component } from '@angular/core';
 
 export class HabilidadesComponent {
 
-    addres = "./assets/img/Skills/"
+      addres = './assets/img/Skills/';
 
-    habilidades = [
-      {
-        name : 'Automatización de procesos',
-        datos : [
-          {imagen: ""+this.addres+"databricks.png",nombre: "Databricks",nivel: "Intermedio"}, 
-          {imagen: ""+this.addres+"python.png",nombre: "Phtyon",nivel: "Intermedio"}, 
-          {imagen: ""+this.addres+"powerBI.jpg",nombre: "Power BI",nivel: "Intermedio"},
-          {imagen: ""+this.addres+"powerautomate.jpg",nombre: "Power Automate",nivel: "Intermedio"},
-          {imagen: ""+this.addres+"powerApps.jpg",nombre: "Power Apps",nivel: "Intermedio"} 
-          ]
-      },
-      {
-      name : 'Desarrollo web',
-      datos : [
-        {imagen: ""+this.addres+"html.jpg",nombre: "Html",nivel: "Intermedio"},
-        {imagen: ""+this.addres+"css.png",nombre: "Css",nivel: "Intermedio"}, 
-        {imagen: ""+this.addres+"javascript.png",nombre: "JavaScript",nivel: "Intermedio"}, 
-        {imagen: ""+this.addres+"angular.png",nombre: "Angular 14",nivel: "Básico"},
-        ]
-      },
+  habilidadesDatos = [
+    {
+      name: 'Bases de datos',
+      datos: [
+        { imagen: this.addres + 'sqlserver.png', nombre: 'SQL Server', nivel: 'Avanzado' },
+        { imagen: this.addres + 'postgresql.png', nombre: 'PostgreSQL', nivel: 'Avanzado' },
+      ]
+    },
+    {
+      name: 'Ingeniería de datos',
+      datos: [
+        { imagen: this.addres + 'python.png', nombre: 'Python', nivel: 'Avanzado' },
+        { imagen: this.addres + 'databricks.png', nombre: 'Databricks', nivel: 'Intermedio' },
+        { imagen: this.addres + 'powerBI.jpg', nombre: 'Power BI', nivel: 'Intermedio' },
+        { imagen: this.addres + 'powerautomate.jpg', nombre: 'Power Automate', nivel: 'Intermedio' },
+        { imagen: this.addres + 'powerApps.jpg', nombre: 'Power Apps', nivel: 'Intermedio' },
+      ]
+    }
+  ];
 
-
-    
-    ]
-    
-
+  habilidadesWeb = [
+    {
+      name: 'Frontend',
+      datos: [
+        { imagen: this.addres + 'angular.png', nombre: 'Angular', nivel: 'Avanzado' },
+        { imagen: this.addres + 'javascript.png', nombre: 'TypeScript / JS', nivel: 'Avanzado' },
+        { imagen: this.addres + 'html.jpg', nombre: 'HTML / CSS', nivel: 'Avanzado' },
+      ]
+    },
+    {
+      name: 'Backend & Cloud',
+      datos: [
+        { imagen: this.addres + 'python.png', nombre: 'Django / Python', nivel: 'Avanzado' },
+        { imagen: this.addres + 'aws.png', nombre: 'AWS', nivel: 'Intermedio' },
+        { imagen: this.addres + 'docker.png', nombre: 'Docker', nivel: 'Intermedio' },
+      ]
+    }
+  ];
 
 
 

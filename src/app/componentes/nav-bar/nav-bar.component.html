@@ -1,14 +1,15 @@
-<div class="row fila">
-    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" id="navTitle">
-        <h1>Portafolio web</h1>
-    </div>
-    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" id="navBar">
-        <ul>
-            <li><a href="#about-me">Acerca de mi</a></li>
-            <li><a href="#proyLab-field">Experiencia profesional</a></li>
-            <li><a href="#skills-field">Habilidades</a></li>
-            <li><a href="#hobbies-field">Proyectos</a></li>
-            <li><a href="#footer">Redes Sociales</a></li>
-        </ul>				
-    </div>
-</div>
+<nav class="nav">
+  <span class="nav-logo">Kevin Pallo</span>
+  <button class="nav-toggle" (click)="menuOpen = !menuOpen" [attr.aria-expanded]="menuOpen" aria-label="Abrir menú">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+  <ul class="nav-links" [class.open]="menuOpen">
+    <li><a (click)="scrollTo('about-me')">Sobre mí</a></li>
+    <li><a (click)="scrollTo('proyLab-field')">Experiencia</a></li>
+    <li><a (click)="scrollTo('hobbies-field')">Proyectos</a></li>
+    <li><a (click)="scrollTo('skills-field')">Stack</a></li>
+    <li><a (click)="scrollTo('footer')">Contacto</a></li>
+  </ul>
+</nav>

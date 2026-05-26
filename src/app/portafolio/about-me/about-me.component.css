@@ -1,53 +1,73 @@
-.about-me{
-	padding: 40px 20px;
-	background-color: rgba(0, 0, 0, 1);
-	background-size: cover;
+.about {
+  padding: 3rem 2rem;
+  background: #f5f5f3;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
 }
 
-#titulo-skill h1{
-	text-align: center;
-	color: rgb(15, 109, 251);
+.about-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.fila .imagen img{
-	padding: 10px;
-	width: 90%;
-	border-radius: 30px;
+.about-label {
+  font-size: 23px;
+  font-weight: 500;
+  color: #534AB7;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 
-.fila .imagen {
-    text-align: center;
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 2.5rem;
 }
 
-.fila .parrafo{
-	align-items: center;
-	display: inline-flex;
-	padding: 20px 40px;
-	color: rgb(195, 195, 195);
+.stat-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 0.5px solid rgba(0, 0, 0, 0.08);
 }
 
-.fila p{
-	align-items: center;
-	text-align: justify;
-	font-size: 16px;
+.stat-num {
+  font-size: 36px;
+  font-weight: 500;
+  color: #534AB7;
 }
 
-@media (max-width: 780px) {
-	
-	.about-me .parrafo{
-		text-align: justify;
-	    font-size: 10px !important;
-	    padding: 30px 20px 10px 20px;
-	}
+.stat-label {
+  font-size: 14px;
+  color: #888;
+}
 
-	.about-me .parrafo p{
-	    font-size: 12px !important;
-		margin-bottom: 0px;
-	}
-	
-	.about-me{
-		padding: 40px 20px;
-		background-size: cover;
-	}
+.about-text {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.75;
+  text-align: center;
+}
 
+@media (max-width: 768px) {
+  .about-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stat-num {
+    font-size: 26px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
 }

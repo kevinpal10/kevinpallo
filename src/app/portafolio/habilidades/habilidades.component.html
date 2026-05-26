@@ -1,17 +1,39 @@
-<Section class="skills-field" id="skills-field">
-    <div id="titulo-skill" class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h1>Habilidades</h1>
-    </div>
-    <div id="contenedor-skill" *ngFor="let habilidad of habilidades" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div  class="row" id="type-habilidades">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h2 class=titulo-skills>{{habilidad.name}}</h2>
-            </div> 
-            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3" *ngFor="let cuadro of habilidad.datos" id="caja-skill">
-                <div id="caja-content">
-                    <img class="img"  src="{{cuadro.imagen}}" alt="">
-                </div>
-            </div>
+<section class="stack-section" id="skills-field">
+  <div class="section-inner">
+
+    <div class="section-label">Stack técnico</div>
+
+    <div class="stack-divider">Datos — área principal</div>
+    <div class="skills-primary-grid">
+      <div class="skill-group" *ngFor="let habilidad of habilidadesDatos">
+        <div class="skill-group-title">
+          <i class="ti ti-database"></i> {{ habilidad.name }}
         </div>
+        <div class="skill-item" *ngFor="let item of habilidad.datos">
+        <div class="skill-left">
+            <span class="skill-dot"></span>
+            <span class="skill-name">{{ item.nombre }}</span>
+        </div>
+        <span class="skill-level lv-high">{{ item.nivel }}</span>
+        </div>
+      </div>
     </div>
-</Section>
+
+    <div class="stack-divider">Desarrollo web — habilidad complementaria</div>
+    <div class="skills-secondary-grid">
+        <div class="skill-group skill-group-secondary" *ngFor="let habilidad of habilidadesWeb">
+        <div class="skill-group-title secondary">
+          <i class="ti ti-layout"></i> {{ habilidad.name }}
+        </div>
+        <div class="skill-item" *ngFor="let item of habilidad.datos">
+        <div class="skill-left">
+            <span class="skill-dot skill-dot-teal"></span>
+            <span class="skill-name">{{ item.nombre }}</span>
+        </div>
+        <span class="skill-level lv-mid">{{ item.nivel }}</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
